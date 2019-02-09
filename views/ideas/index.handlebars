@@ -1,0 +1,15 @@
+<h1 class="text-blue"> Pages read:{{ pagescount}}</h1>
+{{#each ideas}}
+<div class="card card-body mb-3 bg-light">
+  <h4 class="dislay-1 text-center">Title: {{title}}</h4>
+  <label for="text" class="text-center"><strong>Number of Pages: {{pages}}</strong></label>
+  <p class="lead font-italic">Details: <br>{{details}}</p>
+  <a href="/ideas/edit/{{id}}" class="btn btn-dark btn-block mb-3">Edit</a>
+  <form method="post" action="/ideas/{{id}}?_method=DELETE">
+    <input type="hidden" name="_method" value="DELETE">
+    <input type="submit" class="btn btn-danger btn-block" value="Delete">
+  </form>
+</div>
+{{else}}
+<p class="lead">No video listed</p>
+{{/each}}

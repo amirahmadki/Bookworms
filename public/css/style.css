@@ -1,0 +1,26 @@
+.logo {
+  width: 130px;
+  margin: auto;
+}
+
+.bookworms {
+  width: 50px;
+  margin: auto;
+}
+
+.carousel-item {
+  height: 600px;
+}
+.carousel-img-1 {
+  background: url("/images/bookworms1.png");
+  background-size: cover;
+}
+.carousel-img-2 {
+  background: url("/images/bookworms2.png");
+  background-size: cover;
+}
+
+.carousel-img-3 {
+  background: url("/images/bookworms3.png");
+  background-size: cover;
+}
