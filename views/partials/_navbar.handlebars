@@ -1,13 +1,14 @@
 <nav class="navbar navbar-expand-sm navbar-dark bg-secondary mb-3">
   <div class="container">
     {{#if user}}
-    <a class="navbar-brand" href="/">Book Worm <img class="bookworms" src="/images/bookworms.png" alt="">{{ user.name}}</a>
+    <a class="navbar-brand" href="/">Book Worm <img class="bookworms" src="/images/bookworms.png"
+        alt="">{{ user.name}}</a>
     {{else}}
     <a class="navbar-brand" href="/">Book Worms <img class="bookworms" src="/images/bookworms.png" alt=""> </a>
     {{/if}}
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
-      aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarNav">
@@ -17,25 +18,22 @@
         </li>
 
         <li class="nav-item">
-          <a class="nav-link" href="/about">about</a>
-        </li>
-
-        <li class="nav-item">
-          <a class="nav-link" href="/raamen">Raameena Special</a>
+          <a class="nav-link" href="/about">Why Read</a>
         </li>
       </ul>
       <ul class="navbar-nav ml-auto">
         {{#if user}}
+
         <li class="nav-item">
-          <a class="nav-link" href="/users/logout">Logout</a>
+
+          <a href="/ideas" class="nav-link">Books Read</a>
         </li>
 
-        <li class="nav-item dropdown">
-          <a href="" class="nav-link dropdown-toggle" data-toggle="dropdown" id="navbarDropdownmenulik"> Books</a>
-          <div class="dropdown-menu">
-            <a href="/ideas" class="dropdown-item">Books Read</a>
-            <a href="/ideas/add" class="dropdown-item">Add New Book</a>
-          </div>
+        <li class="nav-item">
+          <a href="/ideas/add" class="nav-link">Add New Book</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/users/logout">Logout</a>
         </li>
         {{else}}
         <li class="nav-item">
